@@ -103,7 +103,7 @@
           .then(() => {
             this.$http({
               url: this.$http.adornUrl("/product/category/delete"),
-              method: "post",
+              method: "delete",
               data: this.$http.adornData(catIds, false)
             }).then(({
               data
